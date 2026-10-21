@@ -1,0 +1,350 @@
+:root {
+    --inkwell-blue: #2E4057;
+    --intensity-indigo: #EE583F;
+    --dusty-rose: #F7B3CC;
+    --aged-gold: #C7B65E;
+    --parchment-white: #FFF7EE;
+    --bookish-black: #131C26;
+    --white: #FFFFFF;
+}
+
+/* Base styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--parchment-white);
+    color: var(--bookish-black);
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--inkwell-blue);
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--inkwell-blue);
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--inkwell-blue);
+}
+
+/* Header */
+header {
+    background-color: var(--inkwell-blue);
+    color: var(--parchment-white);
+    padding: 1rem 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+header img {
+    width: 100px;
+    background-color: var(--white);
+    padding: 0.35rem;
+    border-radius: 6px;
+}
+
+header h1 {
+    color: var(--parchment-white);
+    margin: 0;
+    flex: 1 1 250px;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+header nav a {
+    color: var(--parchment-white);
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+}
+
+header nav a:hover,
+header nav a:focus {
+    background-color: var(--parchment-white);
+    color: var(--inkwell-blue);
+    outline: 2px solid var(--aged-gold);
+    outline-offset: 2px;
+}
+
+/* Main page layout */
+main {
+    width: min(1100px, 90%);
+    margin: 2rem auto;
+}
+
+main section {
+    background-color: var(--white);
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--aged-gold);
+    border-radius: 8px;
+}
+
+main section:first-child {
+    border-top: 6px solid var(--intensity-indigo);
+}
+
+/* Cards and content blocks */
+article {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--parchment-white);
+    border-left: 5px solid var(--dusty-rose);
+    border-radius: 4px;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+/* Buttons and prominent links */
+button,
+main a[href="gallery.html"] {
+    display: inline-block;
+    background-color: var(--inkwell-blue);
+    color: var(--parchment-white);
+    border: 2px solid var(--inkwell-blue);
+    border-radius: 5px;
+    padding: 0.65rem 1rem;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus,
+main a[href="gallery.html"]:hover,
+main a[href="gallery.html"]:focus {
+    background-color: var(--parchment-white);
+    color: var(--inkwell-blue);
+    outline: 3px solid var(--aged-gold);
+    outline-offset: 2px;
+}
+
+/* Gallery table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: var(--white);
+}
+
+caption {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+th,
+td {
+    border: 1px solid var(--inkwell-blue);
+    padding: 0.9rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: var(--inkwell-blue);
+    color: var(--parchment-white);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--parchment-white);
+}
+
+td img {
+    width: 150px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Forms */
+form {
+    margin-top: 1rem;
+}
+
+form div,
+fieldset {
+    margin-bottom: 1rem;
+}
+
+label,
+legend {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid var(--inkwell-blue);
+    border-radius: 4px;
+    background-color: var(--white);
+    color: var(--bookish-black);
+    font: inherit;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid var(--aged-gold);
+    outline-offset: 2px;
+}
+
+/* Testimonials */
+blockquote {
+    margin: 1rem 0;
+    padding: 1rem 1.25rem;
+    background-color: var(--dusty-rose);
+    border-left: 6px solid var(--inkwell-blue);
+}
+
+/* Footer */
+body>footer {
+    background-color: var(--inkwell-blue);
+    color: var(--parchment-white);
+    padding: 2rem 5%;
+}
+
+body>footer h2 {
+    color: var(--parchment-white);
+}
+
+body>footer a {
+    color: var(--parchment-white);
+}
+
+body>footer form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 0.5rem;
+}
+
+body>footer input[type="email"] {
+    flex: 1 1 240px;
+    max-width: 400px;
+}
+
+body>footer button {
+    background-color: var(--parchment-white);
+    color: var(--inkwell-blue);
+}
+
+body>footer button:hover,
+body>footer button:focus {
+    background-color: var(--aged-gold);
+    color: var(--bookish-black);
+}
+
+body>footer nav {
+    margin: 1rem 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 1rem;
+    }
+
+    header nav a {
+        display: block;
+        text-align: center;
+    }
+
+    main {
+        width: 94%;
+        margin: 1rem auto;
+    }
+
+    main section {
+        padding: 1rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    body>footer form {
+        display: block;
+    }
+
+    body>footer input[type="email"],
+    body>footer button {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    button,
+    main a[href="gallery.html"] {
+        width: 100%;
+        text-align: center;
+    }
+}

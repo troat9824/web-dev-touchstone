@@ -28,9 +28,7 @@
             <h2>Shop the Book Haven Gallery</h2>
             <p>Browse a selection of books, journals, magazines, and office supplies.</p>
 
-            <button type="button">View Shopping Cart</button>
-            <button type="button" id="clear-cart">Clear Cart</button>
-            <button type="button" id="process-order">Process Order</button>
+            <button type="button" id="view-cart">View Shopping Cart</button>
         </section>
 
         <section>
@@ -139,6 +137,24 @@
                 </tbody>
             </table>
         </section>
+
+        <div id="cart-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="cart-modal-title" hidden>
+            <div class="modal-content">
+                <button type="button" id="close-cart" class="modal-close"
+                    aria-label="Close shopping cart">&times;</button>
+
+                <h2 id="cart-modal-title">Shopping Cart</h2>
+
+                <div id="cart-items">
+                    <p>Your cart is empty.</p>
+                </div>
+
+                <div class="cart-actions">
+                    <button type="button" id="clear-cart">Clear Cart</button>
+                    <button type="button" id="process-order">Process Order</button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>

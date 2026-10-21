@@ -348,3 +348,56 @@ body>footer nav {
         text-align: center;
     }
 }
+
+/* Shopping cart modal */
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(19, 28, 38, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.modal[hidden] {
+    display: none;
+}
+
+.modal-content {
+    position: relative;
+    width: min(600px, 95%);
+    max-height: 80vh;
+    overflow-y: auto;
+    background-color: var(--parchment-white);
+    color: var(--bookish-black);
+    border: 3px solid var(--inkwell-blue);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.25rem 0.75rem;
+    font-size: 24px;
+}
+
+.cart-list {
+    padding-left: 1.5rem;
+}
+
+.cart-list li {
+    margin-bottom: 0.75rem;
+}
+
+.cart-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}

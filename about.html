@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven Bookstore | About Us</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/Client3_LogoPalette1_2E4057.png" alt="Book Haven Bookstore open book logo" width="120">
+        </a>
+        <h1>Book Haven Bookstore</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About Us</a>
+            <a href="events.html">Events &amp; Community</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Book Haven Bookstore</h2>
+            <p>
+                Book Haven Bookstore is a local bookstore dedicated to fostering literary exploration
+                and a love for reading. We offer a diverse selection of books, magazines, journals,
+                and office supplies for avid readers, students, and anyone searching for quality
+                reading materials and everyday essentials.
+            </p>
+
+            <p>
+                Our goal is to create an inviting space that celebrates the written word, supports
+                intellectual growth, and helps build a vibrant literary community. We also want to
+                make it easier for customers to ask about books, request products, and make purchases.
+            </p>
+        </section>
+
+        <section>
+            <h2>Hours of Operation</h2>
+            <ul>
+                <li>Monday-Friday: 9 a.m. to 8 p.m.</li>
+                <li>Saturday: 10 a.m. to 6 p.m.</li>
+                <li>Sunday: 11 a.m. to 5 p.m.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Feedback and Custom Orders</h2>
+            <p>
+                Use the form below to send us feedback or request a book or other product
+                that you would like us to order.
+            </p>
+
+            <form id="customer-form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <fieldset>
+                    <legend>Reason for Contact</legend>
+
+                    <input type="radio" id="feedback" name="contactType" value="feedback" required>
+                    <label for="feedback">Feedback</label>
+
+                    <input type="radio" id="custom-order" name="contactType" value="custom-order">
+                    <label for="custom-order">Custom Order</label>
+                </fieldset>
+
+                <div>
+                    <label for="product-request">Book or Product Requested:</label>
+                    <input type="text" id="product-request" name="productRequest">
+                </div>
+
+                <div>
+                    <label for="message">Comments or Order Details:</label><br>
+                    <textarea id="message" name="message" rows="6" cols="50" required></textarea>
+                </div>
+
+                <div>
+                    <label for="contact-method">Preferred Contact Method:</label>
+                    <select id="contact-method" name="contactMethod">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <button type="submit">Submit Request</button>
+                <button type="reset">Clear Form</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <h2>Subscribe to Our Newsletter</h2>
+            <form>
+                <label for="newsletter-email">Email Address:</label>
+                <input type="email" id="newsletter-email" name="newsletterEmail" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Follow Book Haven</h2>
+            <p>
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">X / Twitter</a>
+            </p>
+        </section>
+
+        <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="about.html">About Us</a> |
+            <a href="events.html">Events &amp; Community</a>
+        </nav>
+
+        <p>&copy; 2026 Book Haven Bookstore. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
